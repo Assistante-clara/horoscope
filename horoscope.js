@@ -31,7 +31,7 @@ function scrap(signe){
     		
     		var $ = require('cheerio').load(body, { xmlMode: false, ignoreWhitespace: false, lowerCaseTags: false });
    		
-   			var a= $('div.text-wrapper:nth-child(1) > p:nth-child(3)').text()
+   			var a= $('div:nth-child(3) > div > section > p').text()
    			console.log(a)
 			var b=''
 
